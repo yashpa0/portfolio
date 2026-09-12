@@ -1,0 +1,6 @@
+node_modules/
+.env
+portfolio.db
+uploads/
+.vercel
+

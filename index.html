@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Pathak — Game Designer &amp; Developer</title>
+  <meta name="description" content="Portfolio of Yash Pathak, a passionate Game Designer & Developer skilled in Unity 3D, Unreal Engine, Blender, C#, and C++. Creating immersive gaming experiences." />
+  <meta name="keywords" content="Game Designer, Game Developer, Unity, Unreal Engine, Blender, 3D Modelling, Portfolio, Yash Pathak" />
+  <meta name="author" content="Yash Pathak" />
+  <meta property="og:title" content="Yash Pathak — Game Designer & Developer" />
+  <meta property="og:description" content="Passionate Game Developer creating immersive gaming experiences with Unity, Unreal Engine, and Blender." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo" id="nav-logo">YASH<span>.DEV</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#skills" id="nav-skills">Skills</a></li>
+        <li><a href="#projects" id="nav-projects">Projects</a></li>
+        <li><a href="#education" id="nav-education">Education</a></li>
+        <li><a href="#contact" id="nav-contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="assets/hero-banner.png" alt="Game development environment" />
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge" id="hero-badge">
+          <span class="dot"></span>
+          <span id="hero-badge-text">Available for Game Dev Projects</span>
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          <span class="line">I'm <span class="highlight" id="hero-name">Yash Pathak</span></span>
+          <span class="line" id="hero-subtitle">Game Designer &amp; Developer</span>
+        </h1>
+        <p class="hero-description" id="hero-description">
+          Crafting immersive worlds and interactive experiences with Unity, Unreal Engine &amp; Blender. 
+          Currently pursuing B.E. in Computer Science (Graphics &amp; Gaming) at Chandigarh University.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary" id="cta-projects"><span>View My Work</span></a>
+          <a href="#contact" class="btn-secondary" id="cta-contact">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll" id="hero-scroll">
+      <div class="mouse"></div>
+      SCROLL
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label reveal">ABOUT ME</div>
+      <h2 class="section-title reveal reveal-delay-1">The Mind Behind <span class="gradient-text">The Games</span></h2>
+      <div class="about-grid">
+        <div class="about-image reveal reveal-delay-2">
+          <div class="about-image-wrapper">
+            <img src="assets/profile.jpg" alt="Yash Pathak - Game Designer" />
+          </div>
+          <div class="about-image-decoration"></div>
+        </div>
+        <div class="about-text reveal reveal-delay-3">
+          <h3 id="about-heading">Turning Imagination Into Interactive Reality</h3>
+          <p id="about-text-1">
+            I'm a motivated and detail-oriented Game Developer with a strong foundation in game programming, 
+            3D graphics, and software development. Currently pursuing my B.E. in Computer Science Engineering 
+            (Graphics &amp; Gaming) at Chandigarh University, I live and breathe game design.
+          </p>
+          <p id="about-text-2">
+            My journey spans from crafting open-world 3D environments to building polished mobile games. 
+            I'm passionate about creating immersive gaming experiences where creativity meets technical precision — 
+            whether it's building complex game mechanics, sculpting 3D models, or optimizing shaders for that 
+            perfect visual feel.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" id="stat-projects">2+</span>
+              <span class="stat-label">Game Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" id="stat-engines">3</span>
+              <span class="stat-label">Game Engines</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" id="stat-cert">1</span>
+              <span class="stat-label">Certification</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal">ARSENAL</div>
+      <h2 class="section-title reveal reveal-delay-1">My <span class="gradient-text">Skill Set</span></h2>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Game Development -->
+        <div class="skill-category reveal reveal-delay-1" id="skill-gamedev">
+          <div class="skill-icon">🎮</div>
+          <h3>Game Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Unity 3D</span>
+            <span class="skill-tag">Unreal Engine</span>
+            <span class="skill-tag">Blender</span>
+          </div>
+        </div>
+        <!-- Programming -->
+        <div class="skill-category reveal reveal-delay-2" id="skill-programming">
+          <div class="skill-icon">💻</div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Game Scripting</span>
+          </div>
+        </div>
+        <!-- Design -->
+        <div class="skill-category reveal reveal-delay-3" id="skill-design">
+          <div class="skill-icon">🎨</div>
+          <h3>3D Design</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">3D Modelling</span>
+            <span class="skill-tag">Texturing</span>
+            <span class="skill-tag">Shading</span>
+          </div>
+        </div>
+        <!-- Tools -->
+        <div class="skill-category reveal reveal-delay-4" id="skill-tools">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools &amp; Workflow</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Version Control</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-label reveal">PORTFOLIO</div>
+      <h2 class="section-title reveal reveal-delay-1">Featured <span class="gradient-text">Game Projects</span></h2>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project 1: 3D Open World -->
+        <div class="project-card reveal reveal-delay-2" id="project-3d">
+          <div class="project-thumbnail">
+            <img src="assets/project-3d.png" alt="3D Open World Game" />
+            <div class="project-overlay">
+              <div class="project-overlay-tags">
+                <span class="project-overlay-tag">Unity 3D</span>
+                <span class="project-overlay-tag">C#</span>
+                <span class="project-overlay-tag">Open World</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-year">2026</div>
+            <h3 class="project-title">3D Console/PC Open World Game</h3>
+            <div class="project-type">Team Project</div>
+            <p class="project-description">
+              A 3D open world game where players must complete objectives and destroy a parody world to save it. 
+              Built collaboratively with a team, featuring complex gameplay systems.
+            </p>
+            <ul class="project-features">
+              <li>Open world exploration with dynamic environments</li>
+              <li>Car driving mechanics with realistic physics</li>
+              <li>Gun mechanics and combat system</li>
+              <li>Full story mode with branching objectives</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 2: 2D Mobile Game -->
+        <div class="project-card reveal reveal-delay-3" id="project-2d">
+          <div class="project-thumbnail">
+            <img src="assets/project-2d.png" alt="2D Mobile Game" />
+            <div class="project-overlay">
+              <div class="project-overlay-tags">
+                <span class="project-overlay-tag">Unity 3D</span>
+                <span class="project-overlay-tag">C#</span>
+                <span class="project-overlay-tag">Mobile</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-year">2025</div>
+            <h3 class="project-title">2D Mobile Color Match Game</h3>
+            <div class="project-type">Individual Project</div>
+            <p class="project-description">
+              A mobile game where players must match the color of a ball with upcoming blocks to pass. 
+              Built as a solo project with polished mechanics and addictive gameplay loop.
+            </p>
+            <ul class="project-features">
+              <li>Color matching puzzle mechanics</li>
+              <li>Real-time scoring system</li>
+              <li>High score tracking &amp; leaderboards</li>
+              <li>In-game coin economy system</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-label reveal">JOURNEY</div>
+      <h2 class="section-title reveal reveal-delay-1">Education <span class="gradient-text">&amp; Growth</span></h2>
+      <div class="timeline" id="education-timeline">
+        <!-- Chandigarh University -->
+        <div class="timeline-item reveal reveal-delay-2" id="edu-cu">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">AUG 2023 — JUL 2027</div>
+            <h3 class="timeline-title">Chandigarh University</h3>
+            <div class="timeline-subtitle">B.E. Computer Science &amp; Engineering (Graphics &amp; Gaming)</div>
+            <p class="timeline-detail">GPA: 6.15/10 · Currently Enrolled</p>
+          </div>
+        </div>
+        <!-- Higher Secondary -->
+        <div class="timeline-item reveal reveal-delay-3" id="edu-higher">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">APR 2022 — MAR 2023</div>
+            <h3 class="timeline-title">St. Dominic Savio College, Lucknow</h3>
+            <div class="timeline-subtitle">Higher Secondary</div>
+            <p class="timeline-detail">Scored 66.8%</p>
+          </div>
+        </div>
+        <!-- Secondary -->
+        <div class="timeline-item reveal reveal-delay-4" id="edu-secondary">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">APR 2020 — APR 2021</div>
+            <h3 class="timeline-title">St. Dominic Savio College, Lucknow</h3>
+            <div class="timeline-subtitle">Secondary</div>
+            <p class="timeline-detail">Scored 75.16%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="certifications" id="certifications">
+    <div class="container">
+      <div class="section-label reveal">CREDENTIALS</div>
+      <h2 class="section-title reveal reveal-delay-1">Professional <span class="gradient-text">Certification</span></h2>
+      <div id="certifications-grid">
+        <div class="cert-card reveal reveal-delay-2" id="cert-unity">
+          <div class="cert-icon">🏆</div>
+          <h3 class="cert-title">Unity Game Development Professional Certification</h3>
+          <p class="cert-issuer">Unity Technologies</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal">LET'S CONNECT</div>
+      <h2 class="section-title reveal reveal-delay-1">Ready to Build <span class="gradient-text">Something Epic?</span></h2>
+      <div class="contact-content reveal reveal-delay-2">
+        <p id="contact-description">
+          I'm always excited to collaborate on game development projects, discuss new ideas, or explore 
+          opportunities in the gaming industry. Let's create something extraordinary together.
+        </p>
+        <div class="contact-links">
+          <a href="tel:+917392002211" class="contact-link" id="contact-phone">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span id="contact-phone-text">+91 7392002211</span>
+          </a>
+          <a href="mailto:yashpathak0322@gmail.com" class="contact-link" id="contact-email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span id="contact-email-text">yashpathak0322@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/yash-pathak-88144128b" target="_blank" rel="noopener" class="contact-link" id="contact-linkedin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="contact-link" id="contact-github">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Live Contact Form Connected to Backend -->
+      <div class="contact-form-card reveal reveal-delay-3">
+        <form id="contact-form">
+          <div class="contact-form-grid">
+            <div class="contact-form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" required placeholder="John Doe" autocomplete="name" />
+            </div>
+            <div class="contact-form-group">
+              <label for="contact-email-input">Your Email</label>
+              <input type="email" id="contact-email-input" name="email" required placeholder="john@example.com" autocomplete="email" />
+            </div>
+          </div>
+          <div class="contact-form-group">
+            <label for="contact-subject">Subject</label>
+            <input type="text" id="contact-subject" name="subject" placeholder="Project Collaboration / Game Dev Inquiry" />
+          </div>
+          <div class="contact-form-group">
+            <label for="contact-msg">Message</label>
+            <textarea id="contact-msg" name="message" required placeholder="Hello Yash, I love your portfolio and would like to discuss..."></textarea>
+          </div>
+          <button type="submit" class="contact-form-btn" id="contact-submit-btn">
+            <span>Send Message 🚀</span>
+          </button>
+          <div id="contact-status" class="contact-status"></div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <p>Designed &amp; Developed by <span>Yash Pathak</span> · &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    // ═══════════════════════════════════════════
+    // PARTICLE SYSTEM
+    // ═══════════════════════════════════════════
+    (function initParticles() {
+      const canvas = document.getElementById('particle-canvas');
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      let mouseX = 0, mouseY = 0;
+      let animationId;
+
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+
+      class Particle {
+        constructor() {
+          this.reset();
+        }
+        reset() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.size = Math.random() * 2 + 0.5;
+          this.speedX = (Math.random() - 0.5) * 0.4;
+          this.speedY = (Math.random() - 0.5) * 0.4;
+          this.opacity = Math.random() * 0.5 + 0.1;
+          this.hue = Math.random() > 0.5 ? 270 : 190; // purple or cyan
+        }
+        update() {
+          this.x += this.speedX;
+          this.y += this.speedY;
+
+          // Mouse interaction
+          const dx = mouseX - this.x;
+          const dy = mouseY - this.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 120) {
+            this.x -= dx * 0.005;
+            this.y -= dy * 0.005;
+          }
+
+          if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+            this.reset();
+          }
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fillStyle = `hsla(${this.hue}, 80%, 65%, ${this.opacity})`;
+          ctx.fill();
+        }
+      }
+
+      function createParticles() {
+        const count = Math.min(80, Math.floor(window.innerWidth / 20));
+        particles = [];
+        for (let i = 0; i < count; i++) {
+          particles.push(new Particle());
+        }
+      }
+
+      function drawConnections() {
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 150) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `hsla(270, 70%, 60%, ${0.08 * (1 - dist / 150)})`;
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => { p.update(); p.draw(); });
+        drawConnections();
+        animationId = requestAnimationFrame(animate);
+      }
+
+      window.addEventListener('resize', () => { resize(); createParticles(); });
+      window.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+
+      resize();
+      createParticles();
+      animate();
+    })();
+
+    // ═══════════════════════════════════════════
+    // NAVBAR SCROLL EFFECT
+    // ═══════════════════════════════════════════
+    (function initNavbar() {
+      const navbar = document.getElementById('navbar');
+      const navLinks = document.querySelectorAll('.nav-links a');
+      const sections = document.querySelectorAll('section[id]');
+
+      window.addEventListener('scroll', () => {
+        // Background on scroll
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+
+        // Active link
+        let current = '';
+        sections.forEach(section => {
+          const top = section.offsetTop - 120;
+          if (window.scrollY >= top) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      });
+    })();
+
+    // ═══════════════════════════════════════════
+    // MOBILE NAV TOGGLE
+    // ═══════════════════════════════════════════
+    (function initMobileNav() {
+      const toggle = document.getElementById('nav-toggle');
+      const links = document.getElementById('nav-links');
+
+      toggle.addEventListener('click', () => {
+        links.classList.toggle('open');
+      });
+
+      links.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          links.classList.remove('open');
+        });
+      });
+
+      // Close on outside click
+      document.addEventListener('click', (e) => {
+        if (!links.contains(e.target) && !toggle.contains(e.target)) {
+          links.classList.remove('open');
+        }
+      });
+    })();
+
+    // ═══════════════════════════════════════════
+    // SCROLL REVEAL ANIMATIONS
+    // ═══════════════════════════════════════════
+    (function initReveal() {
+      const reveals = document.querySelectorAll('.reveal');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.05,
+        rootMargin: '0px 0px 50px 0px'
+      });
+
+      reveals.forEach(el => observer.observe(el));
+    })();
+
+    // ═══════════════════════════════════════════
+    // SMOOTH SCROLL FOR ANCHOR LINKS
+    // ═══════════════════════════════════════════
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ═══════════════════════════════════════════
+    // TILT EFFECT ON PROJECT CARDS
+    // ═══════════════════════════════════════════
+    (function initTilt() {
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = (y - centerY) / 30;
+          const rotateY = (centerX - x) / 30;
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+        });
+      });
+    })();
+
+    // ═══════════════════════════════════════════
+    // TYPING EFFECT ON HERO BADGE (subtle)
+    // ═══════════════════════════════════════════
+    (function initCursor() {
+      const badge = document.querySelector('.hero-badge');
+      if (badge) {
+        setInterval(() => {
+          badge.style.borderColor = badge.style.borderColor === 'rgba(168, 85, 247, 0.5)'
+            ? 'rgba(168, 85, 247, 0.25)'
+            : 'rgba(168, 85, 247, 0.5)';
+        }, 1500);
+      }
+    })();
+
+    // ═══════════════════════════════════════════
+    // BACKEND INTEGRATION — DYNAMIC DATA & CONTACT
+    // ═══════════════════════════════════════════
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    function rebindDynamicInteractions() {
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.05,
+        rootMargin: '0px 0px 50px 0px'
+      });
+      reveals.forEach(el => observer.observe(el));
+
+      const cards = document.querySelectorAll('.project-card');
+      cards.forEach(card => {
+        card.onmousemove = (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = (y - centerY) / 30;
+          const rotateY = (centerX - x) / 30;
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+        };
+        card.onmouseleave = () => {
+          card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+        };
+      });
+    }
+
+    const API_BASE = (window.location.protocol === 'file:' || (window.location.port && window.location.port !== '3000')) 
+      ? 'http://localhost:3000' 
+      : '';
+
+    async function loadPortfolioData() {
+      try {
+        const res = await fetch(`${API_BASE}/api/portfolio`);
+        if (!res.ok) return;
+        const data = await res.json();
+
+        // 1. Site Settings / Hero / About / Contact Text
+        if (data.settings) {
+          const s = data.settings;
+          const badgeEl = document.getElementById('hero-badge-text');
+          if (badgeEl && s.hero_badge) badgeEl.textContent = s.hero_badge;
+
+          const heroNameEl = document.getElementById('hero-name');
+          if (heroNameEl && s.hero_title) heroNameEl.textContent = s.hero_title.replace(/^I'm\s+/i, '');
+
+          const heroSubEl = document.getElementById('hero-subtitle');
+          if (heroSubEl && s.hero_subtitle) heroSubEl.textContent = s.hero_subtitle;
+
+          const heroDescEl = document.getElementById('hero-description');
+          if (heroDescEl && s.hero_description) heroDescEl.textContent = s.hero_description;
+
+          const aboutHeadEl = document.getElementById('about-heading');
+          if (aboutHeadEl && s.about_heading) aboutHeadEl.textContent = s.about_heading;
+
+          const aboutP1 = document.getElementById('about-text-1');
+          if (aboutP1 && s.about_text_1) aboutP1.textContent = s.about_text_1;
+
+          const aboutP2 = document.getElementById('about-text-2');
+          if (aboutP2 && s.about_text_2) aboutP2.textContent = s.about_text_2;
+
+          const contactDescEl = document.getElementById('contact-description');
+          if (contactDescEl && s.contact_text) contactDescEl.textContent = s.contact_text;
+          
+          if (s.phone) {
+            const phoneEl = document.getElementById('contact-phone');
+            const phoneText = document.getElementById('contact-phone-text');
+            if (phoneEl) phoneEl.href = `tel:${s.phone.replace(/\s+/g, '')}`;
+            if (phoneText) phoneText.textContent = s.phone;
+          }
+          if (s.email) {
+            const emailEl = document.getElementById('contact-email');
+            const emailText = document.getElementById('contact-email-text');
+            if (emailEl) emailEl.href = `mailto:${s.email}`;
+            if (emailText) emailText.textContent = s.email;
+          }
+          if (s.linkedin) {
+            const linkEl = document.getElementById('contact-linkedin');
+            if (linkEl) linkEl.href = s.linkedin;
+          }
+          if (s.github) {
+            const gitEl = document.getElementById('contact-github');
+            if (gitEl) gitEl.href = s.github;
+          }
+        }
+
+        // 2. Skills
+        if (data.skills && data.skills.length > 0) {
+          const skillsGrid = document.getElementById('skills-grid');
+          if (skillsGrid) {
+            skillsGrid.innerHTML = data.skills.map((cat, idx) => `
+              <div class="skill-category reveal reveal-delay-${(idx % 4) + 1}">
+                <div class="skill-icon">${escapeHtml(cat.icon || '🎮')}</div>
+                <h3>${escapeHtml(cat.category)}</h3>
+                <div class="skill-tags">
+                  ${(cat.items || []).map(item => `<span class="skill-tag">${escapeHtml(item)}</span>`).join('')}
+                </div>
+              </div>
+            `).join('');
+          }
+        }
+
+        // 3. Projects
+        if (data.projects && data.projects.length > 0) {
+          const projectsGrid = document.getElementById('projects-grid');
+          if (projectsGrid) {
+            projectsGrid.innerHTML = data.projects.map((p, idx) => `
+              <div class="project-card reveal reveal-delay-${(idx % 3) + 2}">
+                <div class="project-thumbnail">
+                  <img src="${escapeHtml(p.image || 'assets/hero-banner.png')}" alt="${escapeHtml(p.title)}" onerror="this.src='assets/hero-banner.png'" />
+                  <div class="project-overlay">
+                    <div class="project-overlay-tags">
+                      ${(p.tags || []).map(t => `<span class="project-overlay-tag">${escapeHtml(t)}</span>`).join('')}
+                    </div>
+                  </div>
+                </div>
+                <div class="project-info">
+                  <div class="project-year">${escapeHtml(String(p.year || 2026))}</div>
+                  <h3 class="project-title">${escapeHtml(p.title)}</h3>
+                  <div class="project-type">${escapeHtml(p.type || 'Project')}</div>
+                  <p class="project-description">${escapeHtml(p.description || '')}</p>
+                  <ul class="project-features">
+                    ${(p.features || []).map(f => `<li>${escapeHtml(f)}</li>`).join('')}
+                  </ul>
+                </div>
+              </div>
+            `).join('');
+          }
+
+          const statProjects = document.getElementById('stat-projects');
+          if (statProjects) statProjects.textContent = `${data.projects.length}+`;
+        }
+
+        // 4. Education
+        if (data.education && data.education.length > 0) {
+          const eduTimeline = document.getElementById('education-timeline');
+          if (eduTimeline) {
+            eduTimeline.innerHTML = data.education.map((e, idx) => `
+              <div class="timeline-item reveal reveal-delay-${(idx % 4) + 2}">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-date">${escapeHtml(e.date_range || '')}</div>
+                  <h3 class="timeline-title">${escapeHtml(e.institution)}</h3>
+                  <div class="timeline-subtitle">${escapeHtml(e.degree || '')}</div>
+                  <p class="timeline-detail">${escapeHtml(e.detail || '')}</p>
+                </div>
+              </div>
+            `).join('');
+          }
+        }
+
+        // 5. Certifications
+        if (data.certifications && data.certifications.length > 0) {
+          const certGrid = document.getElementById('certifications-grid');
+          if (certGrid) {
+            certGrid.innerHTML = data.certifications.map((c) => `
+              <div class="cert-card reveal reveal-delay-2">
+                <div class="cert-icon">🏆</div>
+                <h3 class="cert-title">${escapeHtml(c.title)}</h3>
+                <p class="cert-issuer">${escapeHtml(c.issuer || '')}</p>
+              </div>
+            `).join('');
+          }
+        }
+
+        rebindDynamicInteractions();
+      } catch (err) {
+        console.warn('Could not load dynamic portfolio data:', err);
+      }
+    }
+
+    // ═══════════════════════════════════════════
+    // CONTACT FORM SUBMISSION
+    // ═══════════════════════════════════════════
+    function initContactForm() {
+      const form = document.getElementById('contact-form');
+      const submitBtn = document.getElementById('contact-submit-btn');
+      const statusDiv = document.getElementById('contact-status');
+
+      if (!form) return;
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('contact-name').value.trim();
+        const email = document.getElementById('contact-email-input').value.trim();
+        const subject = document.getElementById('contact-subject').value.trim();
+        const message = document.getElementById('contact-msg').value.trim();
+
+        if (!name || !email || !message) {
+          statusDiv.className = 'contact-status error';
+          statusDiv.innerHTML = '⚠️ Please fill out all required fields (Name, Email, Message).';
+          statusDiv.style.display = 'flex';
+          return;
+        }
+
+        submitBtn.disabled = true;
+        const originalBtnText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span>Sending Message... ⏳</span>';
+        statusDiv.style.display = 'none';
+
+        try {
+          const res = await fetch(`${API_BASE}/api/contact`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, subject, message })
+          });
+
+          if (res.ok) {
+            const data = await res.json();
+            if (data.success) {
+              statusDiv.className = 'contact-status success';
+              statusDiv.innerHTML = '🎉 Thank you! Your message has been sent successfully. I will get back to you soon.';
+              statusDiv.style.display = 'flex';
+              form.reset();
+              return;
+            }
+          }
+          throw new Error('API unavailable');
+        } catch (err) {
+          // Graceful fallback for static hosting (GitHub Pages, Netlify, Vercel Static)
+          const mailtoSubject = encodeURIComponent(subject || `Portfolio Contact from ${name}`);
+          const mailtoBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+          window.location.href = `mailto:yashpathak0322@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+
+          statusDiv.className = 'contact-status success';
+          statusDiv.innerHTML = '📧 Opening your email client to send the message directly to Yash Pathak...';
+          statusDiv.style.display = 'flex';
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+        }
+      });
+    }
+
+    // Initialize on load
+    loadPortfolioData();
+    initContactForm();
+  </script>
+
+</body>
+</html>
